@@ -1,4 +1,4 @@
-/* Write your T-SQL query statement below */
+# Write your MySQL query statement below
 SELECT s.name
 FROM SalesPerson s
 WHERE NOT EXISTS (
