@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
-SELECT class AS class FROM Courses
-GROUP BY class
-HAVING COUNT(student) >= 5 
+/* Write your T-SQL query statement below */
+SELECT class FROM Courses 
+GROUP BY class 
+HAVING COUNT(student) >= 5
