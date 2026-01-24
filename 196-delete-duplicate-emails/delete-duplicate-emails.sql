@@ -1,4 +1,4 @@
--- Write your PostgreSQL query statement below
+/* Write your PL/SQL query statement below */
 DELETE FROM Person
 WHERE id NOT IN (
     SELECT min_id FROM (
