@@ -1,4 +1,4 @@
-/* Write your T-SQL query statement below */
+# Write your MySQL query statement below
 SELECT 
  Department ,
  Employee ,
@@ -11,4 +11,3 @@ FROM (
 
 
  WHERE salary_Rank <= 3;
- 
