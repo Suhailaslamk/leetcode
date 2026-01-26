@@ -1,4 +1,4 @@
--- Write your PostgreSQL query statement below
+# Write your MySQL query statement below
 SELECT
     CASE
         WHEN id % 2 = 1 AND id != (SELECT MAX(id) FROM Seat) THEN id + 1
