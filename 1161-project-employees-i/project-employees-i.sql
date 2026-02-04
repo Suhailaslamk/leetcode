@@ -1,4 +1,4 @@
--- Write your PostgreSQL query statement below
+/* Write your PL/SQL query statement below */
 SELECT
     p.project_id,
     ROUND(AVG(e.experience_years), 2) AS average_years
