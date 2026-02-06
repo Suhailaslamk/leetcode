@@ -1,4 +1,4 @@
--- Write your PostgreSQL query statement below
+/* Write your PL/SQL query statement below */
 SELECT
     v.customer_id,
     COUNT(*) AS count_no_trans
