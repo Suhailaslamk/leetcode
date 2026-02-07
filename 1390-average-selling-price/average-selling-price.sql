@@ -1,8 +1,11 @@
-/* Write your PL/SQL query statement below */
+-- Write your PostgreSQL query statement below
 SELECT
     p.product_id,
     ROUND(
-        COALESCE(SUM(u.units * p.price) / SUM(u.units), 0),
+        COALESCE(
+            SUM(u.units * p.price) * 1.0 / SUM(u.units),
+            0
+        ),
         2
     ) AS average_price
 FROM Prices p
