@@ -1,4 +1,4 @@
--- Write your PostgreSQL query statement below
+/* Write your PL/SQL query statement below */
 SELECT
     u.name,
     SUM(t.amount) AS balance
