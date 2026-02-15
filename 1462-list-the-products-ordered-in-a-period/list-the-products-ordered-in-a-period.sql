@@ -1,3 +1,4 @@
+/* Write your PL/SQL query statement below */
 SELECT 
     p.product_name,
     SUM(o.unit) AS unit
