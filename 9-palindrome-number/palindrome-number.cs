@@ -1,9 +1,16 @@
 public class Solution {
     public bool IsPalindrome(int x) {
-        string y = x.ToString();
-        char[] arr = y.ToCharArray();
-        Array.Reverse(arr);
-        string reversed = new String(arr);
-        return y == reversed;
+        string str = x.ToString();
+        string reversed = "";
+        for(int i=str.Length-1; i>=0; i--){
+                 reversed += str[i];
+        }
+            if ( str == reversed){
+            return true;
+        }else{
+            return false;
+        
+        }
+        
     }
 }
