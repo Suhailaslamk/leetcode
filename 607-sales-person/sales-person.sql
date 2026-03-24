@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
+-- Write your PostgreSQL query statement below
 SELECT s.name
 FROM SalesPerson s
 WHERE NOT EXISTS (
