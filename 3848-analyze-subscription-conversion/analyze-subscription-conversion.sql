@@ -1,0 +1,19 @@
+/* Write your T-SQL query statement below */
+SELECT user_id ,
+ROUND(
+AVG(CASE 
+        WHEN 
+        activity_type = 'free_trial'  
+        THEN CAST ( activity_duration AS DECIMAL(10,2)) END) ,2)
+        AS trial_avg_duration ,
+        ROUND(AVG(
+            CASE 
+            WHEN 
+            activity_type = 'paid'  
+            THEN CAST (activity_duration AS DECIMAL(10,2)) END) ,2)
+            AS paid_avg_duration 
+ FROM UserActivity
+WHERE activity_type IN ( 'paid' , 'free_trial'  )
+GROUP BY user_id   
+
+HAVING COUNT(CASE WHEN activity_type = 'paid' THEN 1 END) > 0
